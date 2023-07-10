@@ -1,0 +1,13 @@
+from flask import Flask
+
+#Flask 패키지에 있는 클래스를 통해 
+# 어플리케이션의 입구를 만들어준다
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return f'Hello, {__name__}'
+@app.route('/soom')
+def helloSoom():
+    return f'<b>Hello, soom</b>'
+
